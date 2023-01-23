@@ -21,7 +21,7 @@ func interactive(s string) (input string) {
 }
 
 func Getdata() (login gorocket.LoginPayload, message gorocket.Message, url string) {
-	
+
 	username := interactive("username")
 	password := interactive("password")
 	url = interactive("url")
@@ -33,7 +33,7 @@ func Getdata() (login gorocket.LoginPayload, message gorocket.Message, url strin
 		Password: password,
 	}
 
-message = gorocket.Message{
+	message = gorocket.Message{
 		Channel: channel,
 		Text:    text,
 	}
